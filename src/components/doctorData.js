@@ -1,9 +1,13 @@
+import doctor1 from "../assets/images/doctor1.png"
+import doctor2 from "../assets/images/doctor2.png"
+import doctor3 from "../assets/images/doctor3.png"
+import doctor4 from "../assets/images/doctor4.png"
 
 const myArray = [
     {
         id:1,
         img:{
-            src: "https://framerusercontent.com/images/pmtHyA1vWpzNt1bj3lI7iwkd8M.png",
+            src: "../assets/images/doctor1.png",
             alt: "Dr. Peter Malloy"
         },
         name: "Dr. Peter Malloy"
@@ -11,7 +15,7 @@ const myArray = [
     {
         id:2,
         img:{
-            src:"https://framerusercontent.com/images/oxiQ9jqEhxzLd1ffSTyADxeIG5g.png",
+            src: "../assets/images/doctor2.png",
             alt:"Dr. Anna Whitmore"
         },
         name: "Dr. Anna Whitmore"
@@ -19,7 +23,7 @@ const myArray = [
     {
         id:3,
         img:{
-            src:"https://framerusercontent.com/images/mGZ6M1rak2ZymecCASXOGZNQ.png",
+            src: "../assets/images/doctor3.png",
             alt:"Dr. Margret Oleck"
         },
         name: "Dr. Margret Oleck"
@@ -27,11 +31,10 @@ const myArray = [
     {
         id:24,
         img:{
-            src:"https://framerusercontent.com/images/LKiIsRdwvvur9zVhB17j9yD19lY.png",
+            src: "../assets/images/doctor4.png",
             alt:"Dr. John Stanley"
         },
         name: "Dr. John Stanley"
     }
 ]
-
 export default myArray

@@ -1,5 +1,7 @@
 
 import arrow_forward from "../assets/icons/arrow_forward.svg"
+import entrance_examination from "../assets/images/entrance_examination.png"
+
 
 
 export default function QuickActionCard(props){
@@ -12,12 +14,12 @@ export default function QuickActionCard(props){
                         <h3 className="text-[24px] mb-[12px]">{"props.text"}</h3>
                         <p className="flex ">
                             <span className="mr-[12px]">Learn more</span>
-                            <img className="w-5 parent-hover:translate-x-[20px] " src={arrow_forward} />
+                            <img className="w-5 parent-hover:translate-x-[20px] " src={arrow_forward} alt="Arrow forward icon" />
                         </p>
                     </div>
                     <img
                         className="rounded-[12px] aspect-[16/13] max-xl:aspect-[14/16] w-full object-cover brightness-[60%] hover:blur-[3px] transition transition-discrete duration-400 "
-                        src={"https://framerusercontent.com/images/NL9ZihxOkco4TeWtDDi8fz20.jpg"} 
+                        src={entrance_examination} 
                         alt={"props.img.alt"}
                     />
                     
@@ -27,12 +29,12 @@ export default function QuickActionCard(props){
                         <h3 className="text-[24px] mb-[12px]">{"props.text"}</h3>
                         <p className="flex ">
                             <span className="mr-[12px]">Learn more</span>
-                            <img className="w-5 parent-hover:translate-x-[20px] " src={arrow_forward} />
+                            <img className="w-5 parent-hover:translate-x-[20px] " src={arrow_forward} alt="Arrow forward icon" />
                         </p>
                     </div>
                     <img
                         className="rounded-[12px] aspect-[16/13] max-xl:aspect-[14/16] w-full object-cover brightness-[60%] hover:blur-[3px] transition transition-discrete duration-400 "
-                        src={"https://framerusercontent.com/images/NL9ZihxOkco4TeWtDDi8fz20.jpg"} 
+                        src={entrance_examination} 
                         alt={"props.img.alt"}
                     />
                     

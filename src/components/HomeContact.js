@@ -1,4 +1,3 @@
-
 const HomeContact = [
     {
         id:1,
@@ -17,7 +16,6 @@ const HomeContact = [
             text: "Newton"
         }
     },
-
     {
         id:2,
         select: false,
@@ -26,7 +24,6 @@ const HomeContact = [
         name: "name",
         placeholder: "Jane Smith"
     },
-
     {
         id:3,
         select: false,
@@ -35,7 +32,6 @@ const HomeContact = [
         name: "number",
         placeholder: "696 767 542"
     },
-
     {
         id:4,
         select: false,
@@ -44,7 +40,5 @@ const HomeContact = [
         name: "email",
         placeholder: "jane@medical.com"
     }
-
 ]
-
 export default HomeContact

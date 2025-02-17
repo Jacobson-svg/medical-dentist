@@ -6,7 +6,7 @@ export default function OurStats(){
     return(
         <>
             <div className="p-[24px] pb-[96px] flex max-md:flex-col max-md:justify-center max-md:items-center max-md:gap-[24px] justify-between space-x-[36px] ">
-                <div className="border-t border-t-[#00000080] w-full pt-[24px] flex flex-col items-center max-md:flex-col max-md:items-center ">
+                <div className="border-t border-t-[#000000c0] w-full pt-[24px] flex flex-col items-center max-md:flex-col max-md:items-center ">
                     <h1 className="text-[64px] font-medium mb-[8px] ">
                     <CountUp
                         from={0}
@@ -16,10 +16,10 @@ export default function OurStats(){
                         duration={1}
                         className="count-up-text"
                     />+</h1>
-                    <p className="text-[#00000080] font-medium tracking-[-0.32px] leading-[20.8px] ">years of experience</p>
+                    <p className="text-[#000000c0] font-medium tracking-[-0.32px] leading-[20.8px] ">years of experience</p>
                 </div>
                 
-                <div className="border-t border-t-[#00000080] w-full pt-[24px] flex flex-col items-center max-md:flex-col max-md:items-center ">
+                <div className="border-t border-t-[#000000c0] w-full pt-[24px] flex flex-col items-center max-md:flex-col max-md:items-center ">
                     <h1 className="text-[64px] font-medium mb-[8px] ">
                     <CountUp
                         from={0}
@@ -30,10 +30,10 @@ export default function OurStats(){
                         className="count-up-text"
                     />
                     </h1>
-                    <p className="text-[#00000080] font-medium tracking-[-0.32px] leading-[20.8px] ">specialists</p>
+                    <p className="text-[#000000c0] font-medium tracking-[-0.32px] leading-[20.8px] ">specialists</p>
                 </div>
 
-                <div className="border-t border-t-[#00000080] w-full pt-[24px] flex flex-col items-center max-md:flex-col max-md:items-center ">
+                <div className="border-t border-t-[#000000c0] w-full pt-[24px] flex flex-col items-center max-md:flex-col max-md:items-center ">
                     <h1 className="text-[64px] font-medium mb-[8px] ">
                     <CountUp
                         from={0}
@@ -44,7 +44,7 @@ export default function OurStats(){
                         className="count-up-text"
                     />
                     +</h1>
-                    <p className="text-[#00000080] font-medium tracking-[-0.32px] leading-[20.8px] ">patients helped</p>
+                    <p className="text-[#000000c0] font-medium tracking-[-0.32px] leading-[20.8px] ">patients helped</p>
                 </div>
             </div>
         </>

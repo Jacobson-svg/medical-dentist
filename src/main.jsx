@@ -5,10 +5,14 @@ import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import { Analytics } from "@vercel/analytics/react"
 
+import { MantineProvider } from '@mantine/core';
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-      <App />
+      <MantineProvider defaultColorScheme="dark">
+        <App />
+       </MantineProvider>
       <Analytics />
     </BrowserRouter>
   </StrictMode>,

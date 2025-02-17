@@ -10,7 +10,7 @@ export default function DentalCare(props){
                     <h3 className="text-[24px] mb-[12px]">{props.text}</h3>
                     <p className="flex ">
                         <span className="mr-[12px]">Learn more</span>
-                        <img className="w-5 parent-hover:translate-x-[20px] " src={arrow_forward} />
+                        <img className="w-5 parent-hover:translate-x-[20px] " src={arrow_forward} alt="Arrow forward icon" />
                     </p>
                 </div>
                 <img

@@ -19,8 +19,8 @@ export default function Offices(props){
                             <p>{props.address}</p>
                         </div>
                         <div className="w-full max-sm:ml-14 ">
-                            <a href={`tel:${props.number}`}><p className="flex gap-3"><span><img src={call} /></span>{props.number}</p></a>
-                            <a href={`mailto:${props.mail}`}><p className="flex gap-3"><span><img src={mail} /></span>{props.mail}</p></a>
+                            <a href={`tel:${props.number}`}><p className="flex gap-3"><span><img src={call} alt="call icon" /></span>{props.number}</p></a>
+                            <a href={`mailto:${props.mail}`}><p className="flex gap-3"><span><img src={mail} alt="mail icon" /></span>{props.mail}</p></a>
                         </div>
                     </div>
                     <div className="flex max-sm:flex-col justify-between max-sm:gap-3 py-3 border-t border-t-[#ffffff80] ">

@@ -2,6 +2,7 @@
 import React from "react";
 import LocationCard from "./LocationCard";
 import locationData from "./locationData"
+import lansing_dental_office from "../assets/images/lansing_dental_office.png"
 
 
 export default function Location(){
@@ -43,7 +44,7 @@ export default function Location(){
                     <div className=" w-full">
                         <img 
                             className="h-[560px]  rounded-[12px] w-full object-cover brightness-[60%] "
-                            src="https://framerusercontent.com/images/6B7I7qrqo9zPRHL2LXBnxvUIDY.png" 
+                            src={lansing_dental_office}
                             alt="Dental office" 
                         />
 

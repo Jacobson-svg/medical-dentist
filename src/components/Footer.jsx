@@ -12,19 +12,19 @@ export default function Footer(){
                         <div className="w-full">
                             <ul>
                                 <li className="text-[#ffffff80] mb-[11px]">Pages</li>
-                                <Link to="/"><li className="mb-[11px]">Homepage</li></Link>
-                                <Link to="/location"><li className="mb-[11px]">Location</li></Link>
-                                <Link to="/contact"><li className="mb-[11px]">Contact</li></Link>
-                                <Link to="/about"><li className="mb-[11px]">About</li></Link>
+                                <li className="mb-[11px]"><Link to="/">Homepage</Link></li>
+                                <li className="mb-[11px]"><Link to="/location">Location</Link></li>
+                                <li className="mb-[11px]"><Link to="/contact">Contact</Link></li>
+                                <li className="mb-[11px]"><Link to="/about">About</Link></li>
                             </ul>
                         </div>
                         <div className="w-full">
                             <ul>
                                 <li className="text-[#ffffff80] mb-[11px]">Pages</li>
-                                <Link to="/services"><li className="mb-[11px]">Services</li></Link>
-                                <Link to="#"><li className="mb-[11px]">Services-Example</li></Link>
-                                <Link to="#"><li className="mb-[11px]">Legal</li></Link>
-                                <Link to="/404"><li className="mb-[11px]">404</li></Link>
+                                <li className="mb-[11px]"><Link to="/services">Services</Link></li>
+                                <li className="mb-[11px]"><Link to="#">Services-Example</Link></li>
+                                <li className="mb-[11px]"><Link to="#">Legal</Link></li>
+                                <li className="mb-[11px]"><Link to="/404">404</Link></li>
                             </ul>
                         </div>
                     </div>

@@ -14,11 +14,11 @@ export default function Contact(){
                     <h3 className="text-[24px] max-md:text-[18px] ">Levittown</h3>
                     <p className="text-[#00000090] ">308 Geneva Street</p>
                     <p className="text-[#00000090] flex ">
-                        <img className="mr-[12px] text-[black]" src={call} />
+                        <img className="mr-[12px] text-[black]" src={call} alt="call icon" />
                         <span>+237 696 767 542</span>
                     </p>
                     <p className="text-[#00000090] flex ">
-                        <img className="mr-[12px] text-[black]" src={mail} />
+                        <img className="mr-[12px] text-[black]" src={mail} alt="mail icon" />
                         <span>levittown@medical.com</span>
                     </p>
                     

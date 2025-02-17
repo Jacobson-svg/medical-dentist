@@ -6,6 +6,8 @@ import OurStats from "../components/OurStats";
 import Location from "../components/Location";
 import Footer from "../components/Footer";
 import QuickActionCard from "../components/QuickActionCard";
+import dental_office from "../assets/images/dental_office.png"
+
 
 
 export default function About(){
@@ -45,7 +47,7 @@ export default function About(){
                 <div className="relative px-24px bg-linear-to-143 from-[#545454] to-[#000] ">
                     <img 
                         className="h-[560px] rounded-[12px] w-full object-cover brightness-[60%] "
-                        src="https://framerusercontent.com/images/6aQrMytNW316GF4kU5RE5szv5JE.png" 
+                        src={dental_office}
                         alt="Dental office" 
                     />
                     <div className="absolute flex jsutify-between bottom-0 text-white px-[24px] max-md:px-0 py-[24px] ">

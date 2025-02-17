@@ -12,7 +12,7 @@ export default function LocationCard(props){
                 <Link to={`/location#${props.town}`} >
                     <p className="pt-[12px] flex items-center ">
                         <span className="mr-[12px] ">View more</span>
-                        <img className="w-5" src={arrow_forward} />
+                        <img className="w-5" src={arrow_forward} alt='Arrow forward icon' />
                     </p>
                 </Link>
             </div>

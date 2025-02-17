@@ -1,9 +1,12 @@
+import dental_office from "../assets/images/dental_office.png"
+import lansing_dental_office from "../assets/images/lansing_dental_office.png"
+import newton_dental_office from "../assets/images/newton_dental_office.png"
 
 const data = [
     {
         id:1,
         img:{
-            src:"https://framerusercontent.com/images/6aQrMytNW316GF4kU5RE5szv5JE.png",
+            src:{dental_office},
             alt:"Levittown dental office" 
         },
         town: "Levittown",
@@ -14,7 +17,7 @@ const data = [
     {
         id:2,
         img:{
-            src:"https://framerusercontent.com/images/6B7I7qrqo9zPRHL2LXBnxvUIDY.png",
+            src:{lansing_dental_office},
             alt:"Lansing dental office"  
         },
         town: "Lansing",
@@ -25,7 +28,7 @@ const data = [
     {
         id:3,
         img:{
-            src:"https://framerusercontent.com/images/w3WPgKdK75MjooQgWbOwll3SBII.png",
+            src:{newton_dental_office},
             alt:"Newton dental office"
         },
         town: "Newton",
@@ -33,7 +36,5 @@ const data = [
         number: "+237 658 123 103",
         mail: "newton@medical.com",
     },
-
 ]
-
 export default data

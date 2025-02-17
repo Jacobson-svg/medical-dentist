@@ -19,7 +19,7 @@ export default function page404(){
                             className="count-up-text"
                         />
                     </h1>
-                    <Link to="/"><div className="flex gap-2"><p>Back Home</p><span><img src={arrow} /></span></div></Link>
+                    <Link to="/"><div className="flex gap-2"><p>Back Home</p><span><img src={arrow} alt="Arrow forward icon" /></span></div></Link>
                 </div>
             </section>
         </>
