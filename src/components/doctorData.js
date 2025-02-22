@@ -7,7 +7,7 @@ const myArray = [
     {
         id:1,
         img:{
-            src: "../assets/images/doctor1.png",
+            src: doctor1,
             alt: "Dr. Peter Malloy"
         },
         name: "Dr. Peter Malloy"
@@ -15,7 +15,7 @@ const myArray = [
     {
         id:2,
         img:{
-            src: "../assets/images/doctor2.png",
+            src: doctor2,
             alt:"Dr. Anna Whitmore"
         },
         name: "Dr. Anna Whitmore"
@@ -23,7 +23,7 @@ const myArray = [
     {
         id:3,
         img:{
-            src: "../assets/images/doctor3.png",
+            src: doctor3,
             alt:"Dr. Margret Oleck"
         },
         name: "Dr. Margret Oleck"
@@ -31,7 +31,7 @@ const myArray = [
     {
         id:24,
         img:{
-            src: "../assets/images/doctor4.png",
+            src: doctor4,
             alt:"Dr. John Stanley"
         },
         name: "Dr. John Stanley"

@@ -6,7 +6,7 @@ const dentalCareArray = [
     {
         id:1,
         img: {
-            src: "../assets/images/entrance_examination.png",
+            src: entrance_examination,
             alt: "dentist during Entrance examination"
         },
         text: "Entrance examination"
@@ -14,7 +14,7 @@ const dentalCareArray = [
     {
         id:2,
         img: {
-            src: "../assets/images/fill_therapy.png",
+            src: fill_therapy,
             alt: "fill therapy"
         },
         text: "Fill therapy"
@@ -22,7 +22,7 @@ const dentalCareArray = [
     {
         id:3,
         img: {
-            src: "../assets/images/fixed_prosthetic.png",
+            src: fixed_prosthetic,
             alt: "Fixed prosthetic dentistry"
         },
         text: "Fixed prosthetic destistry"

@@ -6,7 +6,7 @@ const data = [
     {
         id:1,
         img:{
-            src:{dental_office},
+            src:dental_office,
             alt:"Levittown dental office" 
         },
         town: "Levittown",
@@ -17,7 +17,7 @@ const data = [
     {
         id:2,
         img:{
-            src:{lansing_dental_office},
+            src:lansing_dental_office,
             alt:"Lansing dental office"  
         },
         town: "Lansing",
@@ -28,7 +28,7 @@ const data = [
     {
         id:3,
         img:{
-            src:{newton_dental_office},
+            src:newton_dental_office,
             alt:"Newton dental office"
         },
         town: "Newton",
