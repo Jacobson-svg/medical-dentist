@@ -2,6 +2,7 @@
 import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { motion } from "framer-motion";
 
 import Header from "../components/Header"
 import Footer from "../components/Footer"
@@ -93,14 +94,34 @@ export default function Home(){
                     </div>
                 </div>
 
-                <div className="px-[24px] max-lg:px-[16px] max-md:px-0 pt-[72px] pb-[24px] font-medium flex max-md:flex-col justify-between space-x-4 ">
+                <motion.div 
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8 }}
+
+                    className="px-[24px] max-lg:px-[16px] max-md:px-0 pt-[72px] pb-[24px] font-medium flex max-md:flex-col justify-between space-x-4 "
+                >
                     <div className="w-4/12 max-md:w-full max-md:mb-[16px] "><p>About</p></div>
                     <div className="w-8/12 max-md:w-full "><h1 className="text-[42px] max-xl:text-[34px] max-md:text-[27px] ">At Medical, your comfort and comprehensive dental care are our top priorities. We believe dental visits should be stress-free and focused on your well-being. </h1></div>
-                </div>
+                </motion.div>
 
-                <OurStats />
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8 }}
+                >
+                    <OurStats />
+                </motion.div>
 
-                <div className="py-[96px] max-xl:py-[24px] px-[24px] max-md:px-0 flex max-xl:flex-col justify-between space-x-[12px] relative ">
+                <motion.div 
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.9 }}
+                    className="py-[96px] max-xl:py-[24px] px-[24px] max-md:px-0 flex max-xl:flex-col justify-between space-x-[12px] relative "
+                >
                     <div className="font-medium w-4/12 max-xl:w-full h-fit sticky">
                         <h1 className="text-[42px] max-xl:text-[34px] ">Meet our expert team</h1>
                         <p>Learn more</p>
@@ -115,9 +136,14 @@ export default function Home(){
                             {cardElements[1]}
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className="relative px-24px bg-linear-to-143 from-[#545454] to-[#000] ">
+                <motion.div className="relative px-24px mx-[24px] max-md:mx-0 bg-linear-to-143 from-[#545454] to-[#000] "
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.9 }}
+                >
                     <img 
                         className="h-[560px] rounded-[12px] w-full object-cover brightness-[60%] "
                         src={dental_office}
@@ -126,22 +152,34 @@ export default function Home(){
                     <div className="absolute flex max-md:flex-col max-md:items-center justify-between w-full bottom-0 text-white px-[24px] py-[24px] ">
                         <div><h1 className="text-[28px] max-md:mb-6 font-medium ">We partner with all major insurance networks</h1></div>
                         <div className="flex justify-between w-11/12 max-md:w-full">
-                            <div className=""><img className="max-xl:w-[60px] " src={svg1} alt="icons" /></div>
-                            <div className=""><img className="max-xl:w-[60px] " src={svg2} alt="icons" /></div>
-                            <div className=""><img className="max-xl:w-[60px] " src={svg3} alt="icons" /></div>
-                            <div className=""><img className="max-xl:w-[60px] " src={svg4} alt="icons" /></div>
-                            <div className=""><img className="max-xl:w-[60px] " src={svg5} alt="icons" /></div>
+                            <div className=""><img className="max-xl:w-[60px] max-xl:h-[60px] " src={svg1} alt="icons" /></div>
+                            <div className=""><img className="max-xl:w-[60px] max-xl:h-[60px] " src={svg2} alt="icons" /></div>
+                            <div className=""><img className="max-xl:w-[60px] max-xl:h-[60px] " src={svg3} alt="icons" /></div>
+                            <div className=""><img className="max-xl:w-[60px] max-xl:h-[60px] " src={svg4} alt="icons" /></div>
+                            <div className=""><img className="max-xl:w-[60px] max-xl:h-[60px] " src={svg5} alt="icons" /></div>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className="p-[24px] pt-[48px] flex max-md:flex-col justfy-between gap-[36px] text-[#000000c0] font-medium ">
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.9 }}
+                    className="p-[24px] pt-[48px] flex max-md:flex-col justfy-between gap-[36px] text-[#000000c0] font-medium "
+                >
                     <p className="w-4/12 max-md:w-full "></p>
                     <p className="w-4/12 max-md:w-full ">At Medical, your comfort and comprehensive dental care are our top priorities. We believe dental visits should be stress-free and focused on your well-being. Our team is dedicated to making every visit as comfortable as possible, so you can leave feeling confident about your oral health and smile.</p>
                     <p className="w-4/12 max-md:w-full ">We are committed to making high-quality dental care accessible and affordable for everyone. That’s why we proudly work with all major insurance networks, helping to maximize your benefits and minimize out-of-pocket costs. Our knowledgeable team is here to assist you with any insurance-related questions, making the process as seamless as possible so you can focus on your dental health with peace of mind.</p>
-                </div>
+                </motion.div>
 
-                <div className="py-[96px] max-xl:py-[44px] px-[24px] max-md:px-[0] font-medium ">
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.9 }}
+                    className="py-[96px] max-xl:py-[44px] px-[24px] max-md:px-[0] font-medium "
+                >
                     <div className="mb-[24px] flex max-md:flex-col max-md:items-start justify-between items-end ">
                         <h1 className="text-[42px] max-xl:text-[34px] max-md:text-[27px] max-md:mb-[12px] w-[40%] max-md:w-full">We guarantee high quality dental care</h1>
                         <p className="">View all services</p>
@@ -150,28 +188,57 @@ export default function Home(){
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[12px] ">
                         {dentalCareElements}
                     </div>
-                </div>
+                </motion.div>
 
             </section>
 
-            <section className="py-[96px] max-md:py-[44px] font-medium ">
+            <motion.section 
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.9 }}
+                className="py-[96px] max-md:py-[44px] font-medium "
+            >
                 <div className="px-[64px] max-lg:px-[44px] max-md:px-[24px] mb-[24px] ">
                     <h1 className="text-[34px] max-xl:text-[28px] max-md:text-[24px] ">Real experiences</h1>
                     <h1 className="text-[34px] max-xl:text-[28px] max-md:text-[24px] ">& stories from our patients </h1>
                 </div>
 
-                <div className="flex max-md:flex-col max-md:px-[16px] gap-[12px] justify-center overflow-auto">
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.9 }}
+                    className="flex max-md:flex-col max-md:px-[16px] gap-[12px] justify-center overflow-auto"
+                >
                     <FeedBacks />
                     <FeedBacks />
                     <FeedBacks />
-                </div>
-            </section>
+                </motion.div>
+            </motion.section>
 
-            <div className="max-md:px-[16px] ">
-                <Location />
-            </div>
+            <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.9 }}
+                className="max-md:px-[16px] "
+            >
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.9 }}
+                ><Location /></motion.div>
+            </motion.div>
 
-            <section className="mx-[40px] max-lg:mx-[16px] max-md:mx-0 px-[24px] max-lg:px-  max-md:px-[24px] py-[96px] flex max-md:flex-col justify-between gap-[48px]  font-medium ">
+            <motion.section
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.9 }}
+                className="mx-[40px] max-lg:mx-[16px] max-md:mx-0 px-[24px] max-lg:px-  max-md:px-[24px] py-[96px] flex max-md:flex-col justify-between gap-[48px]  font-medium "
+            >
                 <div className="w-6/12 max-md:w-full ">
                     <div>
                         <h1 className="text-[42px] max-xl:text-[34px] max-md:text-[27px] mb-[10px] ">We are here to help.</h1>
@@ -199,7 +266,7 @@ export default function Home(){
                     <Contact />
                     <Contact />
                 </div>
-            </section>
+            </motion.section>
 
             <Footer />
             

@@ -16,7 +16,7 @@ export default function Header(){
     return(
         <>
             <nav className={`fixed w-full backdrop-blur-sm z-100 ${isClicked ? "bg-black text-white" : null} transition transition-discrete duration-300 `}>
-                <div className="flex p-[40px] items-center justify-between h-[89px] ">
+                <div className="flex p-[64px] items-center justify-between h-[89px] ">
                     <Link to="/"><div>
                         <h1>MEDICAL</h1>
                     </div></Link>

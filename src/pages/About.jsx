@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Cards from "../components/Cards";
 import doctorData from "../components/doctorData"
 import Header from "../components/Header";
@@ -39,12 +40,24 @@ export default function About(){
                     </div>
                 </div>
 
-                <div className="px-[24px] max-lg:px-[16px] max-md:px-0 pt-[72px] pb-[24px] font-medium flex max-md:flex-col justify-between space-x-4 ">
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.9 }}
+                    className="px-[24px] max-lg:px-[16px] max-md:px-0 pt-[72px] pb-[24px] font-medium flex max-md:flex-col justify-between space-x-4 "
+                >
                     <div className="w-4/12 max-md:w-full max-md:mb-[16px] "><p>History of medical</p></div>
                     <div className="w-8/12 max-md:w-full "><h1 className="text-[42px] max-xl:text-[34px] max-md:text-[27px] ">At Medical, your comfort and comprehensive dental care are our top priorities. We believe dental visits should be stress-free and focused on your well-being. </h1></div>
-                </div>
+                </motion.div>
 
-                <div className="relative px-24px bg-linear-to-143 from-[#545454] to-[#000] ">
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.9 }}
+                    className="relative px-24px bg-linear-to-143 from-[#545454] to-[#000] "
+                >
                     <img 
                         className="h-[560px] rounded-[12px] w-full object-cover brightness-[60%] "
                         src={dental_office}
@@ -60,20 +73,37 @@ export default function About(){
                             </h1>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className="pt-[82px]">
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.9 }}
+                    className="pt-[82px]"
+                >
                     <p className="ml-[24px]">By the numbers</p>
                     <OurStats />
-                </div>
+                </motion.div>
 
-                <div>
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.9 }}
+                >
                     <Location />
-                </div>
+                </motion.div>
 
-                <div className="mt-8 mb-15">
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.9 }}
+                    className="mt-8 mb-15"
+                >
                     <QuickActionCard />
-                </div>
+                </motion.div>
             </section>
 
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import DentalCare from "../components/DentalCare";
 import Header from "../components/Header";
 import dentalCareArray from "../components/dentalCareArray";
@@ -36,18 +37,35 @@ export default function Services(){
                     </div>
                 </div>
 
-                <div className="px-[24px] max-lg:px-[16px] max-md:px-0 pt-[72px] pb-[24px] font-medium flex max-md:flex-col justify-between space-x-4 ">
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.9 }}
+                    className="px-[24px] max-lg:px-[16px] max-md:px-0 pt-[72px] pb-[24px] font-medium flex max-md:flex-col justify-between space-x-4 "
+                >
                     <div className="w-4/12 max-md:w-full max-md:mb-[16px] "><p>History of medical</p></div>
                     <div className="w-8/12 max-md:w-full "><h1 className="text-[42px] max-xl:text-[34px] max-md:text-[27px] ">With over 20 years of experience, Medical is committed to making high-quality dental care accessible and affordable for everyone. With multiple convenient locations, we make it easy for you to prioritize your dental health and receive the exceptional care you deserve, all with peace of mind and trusted expertise you can rely on. </h1></div>
-                </div>
+                </motion.div>
 
-                <div>
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.9 }}
+                >
                     <Location />
-                </div>
+                </motion.div>
 
-                <div className="mt-5 mb-15">
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.9 }}
+                    className="mt-5 mb-15"
+                >
                     <QuickActionCard />
-                </div>
+                </motion.div>
             </section>
 
             <Footer />
